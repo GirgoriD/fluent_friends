@@ -1,0 +1,17 @@
+.welcomePage {
+    background-image: linear-gradient(43deg, #E0FFFF 0%, #e0fff0 46%, #e0ffe7 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    img{
+        height: 200px;
+        border-radius: 10px;
+    }
+    span{
+        padding: 1rem 3rem;
+        font-weight: bold;
+        font-size: 4rem;
+        color:#054581
+    }
+}
