@@ -2,23 +2,21 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import "./contactForm.scss";
 import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com'; // Change this import
 
 function ContactForm() {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
   const form = useRef();
 
   const onSubmit = (data) => {
-    // e.preventDefault();
-  
-    emailjs.sendForm('service_uxhft8q', 'template_pf3rjf8', form.current, 'T9fpV7CMEE9plpemb')
+    emailjs.sendForm('service_uxhft8q', 'template_s43kamg', form.current, 'T9fpV7CMEE9plpemb')
       .then((result) => {
-          console.log(result.text);
-          console.log("message sent");
-      }, (error) => {
-          console.log(error.text);
+          console.log("Message sent successfully:", result.text);
+      })
+      .catch((error) => {
+          console.error("Error sending message:", error);
       });
+    reset();
   };
   
   return (
@@ -51,6 +49,6 @@ function ContactForm() {
       <button type='submit'>Send</button>
     </form>
   );
-
 }
+
 export default ContactForm;
