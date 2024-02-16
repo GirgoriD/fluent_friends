@@ -1,17 +1,43 @@
 .welcomePage {
-    background-image: linear-gradient(43deg, #E0FFFF 0%, #e0fff0 46%, #e0ffe7 100%);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 40vh;
-    img{
-        height: 200px;
-        border-radius: 10px;
+    background-image: linear-gradient(43deg, #E8FFFF 0%, #e8fff2 46%, #e8ffe5 100%);
+    .welcomeHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40vh;
+        padding: 0 5rem;
+        img{
+            height: 200px;
+            border-radius: 10px;
+        }
+        span{
+            font-weight: bold;
+            font-size: 2.5rem;
+            color:#054581;
+        }
+        .welcomeHeaderTexts{
+            width: 70%;
+            a{
+                text-decoration: underline;
+            }
+        }
     }
-    span{
-        padding: 1rem 3rem;
-        font-weight: bold;
-        font-size: 4rem;
-        color:#054581
+    .welcomeContent{
+        height: calc(100vh - 493px);
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5rem;
+        display: flex;
+        gap: 4rem;
+        .lowerImage{
+            img{
+                border-radius: 10px;
+            }
+        }
+        .lowerText{
+            span{
+                font-size: 18px;
+            }
+        }
     }
 }

@@ -7,11 +7,13 @@ const Menu = () => {
         <Link to="/">
           <span>Home</span>
         </Link>
-        <span>sadasd</span>
-        <span>About</span>
+        <Link to="/about">
+          <span>About</span>
+        </Link>
         <Link to="/contact">
           <span>Contacts</span>
         </Link>
+        
     </div>
   )
 }
