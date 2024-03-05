@@ -1,8 +1,66 @@
-.aboutMe{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    img{
-        height: 180px;
+.aboutPage{
+    background: #f8f4ef;
+    .attentionGetter{
+        padding: 0 2rem;
+        background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            width: 45%;
+            font-size: 40px;
+            i{
+                padding-left: 0.9rem;
+            }
+        }
+        img{
+            height: 550px;    
+        }
     }
+.aboutMe,
+.aboutBusiness,
+.aboutServices,
+.aboutCompanyValues {
+  padding: 0 2rem;
+}
+    .aboutMe{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(197deg, #0cebeb, #20e3b2,#29ffc6);
+        background-image: -webkit-linear-gradient(197deg, #0cebeb, #20e3b2,#29ffc6);
+        img{
+            height: 400px;    
+        }
+    }
+    .aboutBusiness{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(348deg, #00C9FF,#92FE9D);
+        background-image: -webkit-linear-gradient(348deg, #00C9FF,#92FE9D);
+        img{
+            height: 400px;
+            padding-right: 2rem  
+        }
+    }
+    .aboutServices{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(315deg, #B3F6D8, #52A7C1);
+        img{
+            height: 400px;
+            padding-left: 2rem;    
+        }
+    }
+    .aboutCompanyValues{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 2rem;
+        background-image: linear-gradient(272deg, #02AAB0,#00CDAC);
+        background-image: -webkit-linear-gradient(272deg, #02AAB0,#00CDAC);
+    }
+    
 }

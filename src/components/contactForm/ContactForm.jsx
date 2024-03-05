@@ -57,6 +57,7 @@ function ContactForm() {
           <label>Email</label>
           <input
             type="email"
+            placeholder='example@gmail.com'
             {...register('email', {
               required: 'Email is required',
               pattern: {
@@ -72,6 +73,7 @@ function ContactForm() {
           <label>Phone Number</label>
           <input
             type="tel"
+            placeholder='123-456-7890'
             {...register('tel', {
               required: 'Phone number is required',
               pattern: {
@@ -86,6 +88,7 @@ function ContactForm() {
         <div>
           <label>Message</label>
           <textarea
+            placeholder='Hello My name is John ...'
             {...register('message', {
               required: 'Message is required',
             })}

@@ -1,7 +1,7 @@
 import "./welcomePage.scss";
 import { TypeAnimation } from "react-type-animation";
-import sampleimage from "../../assets/images/samplePicture.jpg";
-import sampleImage2 from "../../assets/images/smapleImage2.jpg";
+import imageWithChildOnFloor from "../../assets/images/imageWithChildOnFloor.jpg";
+import roomPicture1 from "../../assets/images/roomPicture1.jpg";
 import { Link } from "react-router-dom";
 
 const WelcomePage = () => {
@@ -19,9 +19,9 @@ const WelcomePage = () => {
             style={{ fontSize: "2em" }}
           />
           <br />
-          <Link to="/contact">
+          <Link to="/about">
             <TypeAnimation
-              sequence={[3000, " Click here to learn more."]}
+              sequence={[3300, " Click here to learn more."]}
               cursor={false}
               wrapper="span"
               speed={80}
@@ -29,15 +29,15 @@ const WelcomePage = () => {
             />
           </Link>
         </div>
-        <img src={sampleimage} alt="sampleimage" />
+        <img src={imageWithChildOnFloor} alt="imageWithChildOnFloor" />
       </div>
       <div className="welcomeContent">
         <div className="lowerImage">
-          <img src={sampleImage2} alt="sampleImage2" />
+          <img src={roomPicture1} alt="roomPicture1" />
         </div>
         <div className="lowerText">
           <TypeAnimation
-            sequence={[
+            sequence={[3700, 
               "Unlock your communication potential. Schedule your initial consultation today. Let's embark on this journey towards clearer, confident communication. Your voice matters.",
             ]}
             cursor={false}
@@ -48,7 +48,7 @@ const WelcomePage = () => {
           <br />
           <Link to="/contact">
             <TypeAnimation
-              sequence={[3000, " Contact us now by clicking here."]}
+              sequence={[7500, " Contact us now by clicking here."]}
               cursor={false}
               wrapper="span"
               speed={80}
